@@ -17,5 +17,5 @@ curl localhost:3000/items/all
 
 UPDATE ITEM:
 curl -X "POST" -H "Content-Type: application/json" localhost:3000/items/update --data '{"item_id" : "1", "item_name": "cattle"}'
-item id must be existing serial number
+item id must be existing whole number
 item can be anything, but must be unique.
