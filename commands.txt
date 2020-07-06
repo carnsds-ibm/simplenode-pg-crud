@@ -1,0 +1,16 @@
+INITIALIZE (CREATE) TABLE:
+curl localhost:3000/items/create-table
+
+CREATE/INSERT ITEM:
+curl -X "POST" -H "Content-Type: application/json" localhost:3000/items/create --data '{"item_id" : "<insert number>", "item_name": "<insert name>"}'
+item id must be unique serial number
+item name must be unique name
+
+DELETE:
+curl -X "DELETE" localhost:3000/items/<item_name>
+
+GET ITEM DATA
+curl localhost:3000/items/<item_name>
+
+GET ALL ITEMS
+curl localhost:3000/items
