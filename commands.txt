@@ -3,7 +3,7 @@ curl localhost:3000/items/create-table
 
 CREATE/INSERT ITEM:
 curl -X "POST" -H "Content-Type: application/json" localhost:3000/items/create --data '{"item_id" : "<insert number>", "item_name": "<insert name>"}'
-item id must be unique serial number
+item id must be unique whole number
 item name must be unique name
 
 DELETE:
