@@ -10,7 +10,7 @@ router.get('/items/table-create', async (req, res) => {
     res.send("Table created successfully");
 })
 
-router.post('/items/update', async (req, res) => {
+router.put('/items/update', async (req, res) => {
     const {item_id, item_name} = req.body;
     try {
         if (item_name) {
@@ -52,7 +52,7 @@ router.post('/items/create', async (req, res) => {
 })
 
 router.get('/items/:name', async (req, res) => {
-    
+
     const item_name = req.params.name;
     try {
         if (item_name === "all") {
