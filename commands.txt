@@ -16,12 +16,7 @@ GET ALL ITEMS
 curl localhost:3000/items/all
 
 UPDATE ITEM:
-<<<<<<< HEAD
 curl -X "PUT" -H "Content-Type: application/json" localhost:3000/items/update --data '{"item_id" : "1", "item_name": "cattle"}'
 item id must be existing serial number
 item can be anything, but must be unique.
-=======
-curl -X "POST" -H "Content-Type: application/json" localhost:3000/items/update --data '{"item_id" : "1", "item_name": "cattle"}'
-item id must be existing whole number
-item can be anything, but must be unique.
->>>>>>> 2e63925359ec6e9d50991adfa42672c0337b55cd
+
